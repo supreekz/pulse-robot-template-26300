@@ -47,6 +47,7 @@ const Navbar = () => {
         }}>
             Home
           </a>
+          <a href="#portfolio" className="nav-link">Portfolio</a>
           <a href="#features" className="nav-link">Sobre</a>
           <a href="#details" className="nav-link">Contato</a>
         </nav>
@@ -68,17 +69,23 @@ const Navbar = () => {
         }}>
             Home
           </a>
+          <a href="#portfolio" className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" onClick={() => {
+          setIsMenuOpen(false);
+          document.body.style.overflow = '';
+        }}>
+            Portfolio
+          </a>
           <a href="#features" className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" onClick={() => {
           setIsMenuOpen(false);
           document.body.style.overflow = '';
         }}>
-            About
+            Sobre
           </a>
           <a href="#details" className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" onClick={() => {
           setIsMenuOpen(false);
           document.body.style.overflow = '';
         }}>
-            Contact
+            Contato
           </a>
         </nav>
       </div>
