@@ -129,16 +129,14 @@ const Hero = () => {
             >
               <a 
                 href="#get-access" 
-                className="flex items-center justify-center group w-full sm:w-auto text-center" 
+                className="flex items-center justify-center group w-full sm:w-auto text-center bg-pulse-600 hover:bg-pulse-700 text-white transition-colors duration-300" 
                 style={{
-                  backgroundColor: '#FE5C02',
                   borderRadius: '1440px',
                   boxSizing: 'border-box',
-                  color: '#FFFFFF',
                   cursor: 'pointer',
                   fontSize: '14px',
                   lineHeight: '20px',
-                  padding: '16px 24px', // Slightly reduced padding for mobile
+                  padding: '16px 24px',
                   border: '1px solid white',
                 }}
               >
