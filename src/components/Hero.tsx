@@ -96,12 +96,9 @@ const Hero = () => {
         padding: isMobile ? '100px 12px 40px' : '120px 20px 60px'
       }}
     >
-      {/* Overlay com degradê verde */}
-      <div className="absolute inset-0 bg-gradient-to-br from-pulse-600/70 via-pulse-500/50 to-transparent" style={{ zIndex: 0 }}></div>
-      
       <div className="absolute -top-[10%] -right-[5%] w-1/2 h-[70%] bg-pulse-gradient opacity-20 blur-3xl rounded-full"></div>
       
-      <div className="container px-4 sm:px-6 lg:px-8 relative z-10" ref={containerRef}>
+      <div className="container px-4 sm:px-6 lg:px-8" ref={containerRef}>
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center">
           <div className="w-full lg:w-1/2">
             <div 
