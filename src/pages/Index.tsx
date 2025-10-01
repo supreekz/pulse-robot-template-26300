@@ -67,12 +67,12 @@ const Index = () => {
         <HumanoidSection />
         <SpecsSection />
         <Portfolio />
+        <DetailsSection />
         <ImageShowcaseSection />
         <Features />
         <Testimonials />
         {/* <Newsletter /> */}
         <MadeByHumans />
-        <DetailsSection />
       </main>
       <Footer />
     </div>
