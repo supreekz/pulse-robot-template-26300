@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { Users, Building2, TrendingUp } from "lucide-react";
+import { Users, Building2, TrendingUp, Award, Briefcase, Shield } from "lucide-react";
 
 const CountUp = ({ end, duration = 2000 }: { end: number; duration?: number }) => {
   const [count, setCount] = useState(0);
@@ -49,21 +49,38 @@ const CountUp = ({ end, duration = 2000 }: { end: number; duration?: number }) =
 };
 
 const ImageShowcaseSection = () => {
+  const founder = {
+    name: "Fernanda Frigeri Horn Bigarella",
+    role: "Arquiteta e Urbanista",
+    description: "Fundadora e sócia-diretora, com décadas de experiência transformando espaços urbanos e institucionais",
+    credentials: [
+      {
+        icon: Building2,
+        title: "Ex-Arquiteta Geral",
+        subtitle: "Universidade de Caxias do Sul (UCS)",
+        description: "Maior universidade da Serra Gaúcha"
+      },
+      {
+        icon: Briefcase,
+        title: "Ex-Diretora",
+        subtitle: "Secretaria do Meio Ambiente",
+        description: "Caxias do Sul"
+      }
+    ]
+  };
+
   const partners = [
     {
-      name: "Sócio 1",
-      role: "Arquiteto e Urbanista",
-      description: "Especialista em projetos residenciais e comerciais"
+      name: "Arq. Daniela Horn Bigarella",
+      role: "Arquiteta e Urbanista",
+      icon: Shield,
+      description: "Especialista em PPCI (Plano de Prevenção e Proteção Contra Incêndio) e projetos de segurança"
     },
     {
-      name: "Sócio 2",
-      role: "Arquiteto e Urbanista",
-      description: "Focado em urbanismo e planejamento urbano"
-    },
-    {
-      name: "Sócio 3",
-      role: "Engenheiro Civil",
-      description: "Especialista em segurança e PPCI"
+      name: "Eng. Carolina Horn Bigarella",
+      role: "Engenheira Civil",
+      icon: Award,
+      description: "Focada em projetos estruturais e gerenciamento de obras"
     }
   ];
 
@@ -113,31 +130,94 @@ const ImageShowcaseSection = () => {
           </div>
         </div>
 
-        {/* Partners */}
-        <div className="max-w-5xl mx-auto">
-          <h3 className="text-2xl sm:text-3xl font-display font-bold text-center text-gray-900 mb-8 sm:mb-12">
-            Nossos Sócios
+        {/* Team Section */}
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-2xl sm:text-3xl font-display font-bold text-center text-gray-900 mb-3">
+            Nossa Equipe
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-            {partners.map((partner, index) => (
-              <div 
-                key={index}
-                className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg animate-on-scroll hover:shadow-xl transition-all hover:-translate-y-1"
-              >
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-pulse-500 to-pulse-700 mx-auto mb-4 flex items-center justify-center">
-                  <Users className="w-10 h-10 text-white" />
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Uma família de profissionais dedicadas à excelência em arquitetura, urbanismo e engenharia
+          </p>
+
+          {/* Founder Card - Featured */}
+          <div className="mb-8 sm:mb-12 animate-on-scroll">
+            <div className="bg-gradient-to-br from-pulse-50 via-white to-pulse-50 rounded-3xl p-8 sm:p-10 shadow-2xl border border-pulse-100 hover:shadow-3xl transition-all hover:-translate-y-1">
+              <div className="flex flex-col items-center text-center mb-6">
+                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-pulse-500 to-pulse-700 mb-5 flex items-center justify-center shadow-lg">
+                  <Award className="w-12 h-12 text-white" />
                 </div>
-                <h4 className="text-xl font-display font-semibold text-gray-900 mb-2 text-center">
-                  {partner.name}
+                <div className="inline-flex items-center gap-2 mb-3">
+                  <span className="px-3 py-1 bg-pulse-600 text-white text-xs font-semibold rounded-full">
+                    Fundadora
+                  </span>
+                </div>
+                <h4 className="text-2xl sm:text-3xl font-display font-bold text-gray-900 mb-2">
+                  {founder.name}
                 </h4>
-                <p className="text-pulse-600 font-medium mb-3 text-center">
-                  {partner.role}
+                <p className="text-pulse-600 font-semibold text-lg mb-3">
+                  {founder.role}
                 </p>
-                <p className="text-gray-600 text-sm text-center">
-                  {partner.description}
+                <p className="text-gray-700 max-w-2xl mb-6">
+                  {founder.description}
                 </p>
               </div>
-            ))}
+
+              {/* Credentials */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+                {founder.credentials.map((credential, index) => {
+                  const Icon = credential.icon;
+                  return (
+                    <div 
+                      key={index}
+                      className="bg-white rounded-xl p-5 shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5 border border-pulse-100"
+                    >
+                      <div className="flex items-start gap-3">
+                        <div className="w-10 h-10 rounded-lg bg-pulse-100 flex items-center justify-center flex-shrink-0">
+                          <Icon className="w-5 h-5 text-pulse-600" />
+                        </div>
+                        <div className="flex-1 text-left">
+                          <h5 className="font-semibold text-gray-900 mb-1">
+                            {credential.title}
+                          </h5>
+                          <p className="text-pulse-600 text-sm font-medium mb-1">
+                            {credential.subtitle}
+                          </p>
+                          <p className="text-gray-600 text-xs">
+                            {credential.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+
+          {/* Daughters/Partners - Side by Side */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
+            {partners.map((partner, index) => {
+              const Icon = partner.icon;
+              return (
+                <div 
+                  key={index}
+                  className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg animate-on-scroll hover:shadow-xl transition-all hover:-translate-y-1 border border-gray-100"
+                >
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-pulse-400 to-pulse-600 mx-auto mb-4 flex items-center justify-center shadow-md">
+                    <Icon className="w-10 h-10 text-white" />
+                  </div>
+                  <h4 className="text-xl font-display font-semibold text-gray-900 mb-2 text-center">
+                    {partner.name}
+                  </h4>
+                  <p className="text-pulse-600 font-semibold mb-3 text-center">
+                    {partner.role}
+                  </p>
+                  <p className="text-gray-600 text-sm text-center">
+                    {partner.description}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
