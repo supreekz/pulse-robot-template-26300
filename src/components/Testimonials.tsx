@@ -8,30 +8,29 @@ interface TestimonialProps {
   gradient: string;
   backgroundImage?: string;
 }
-
 const testimonials: TestimonialProps[] = [{
-  content: "Atlas transformed our production line, handling repetitive tasks while our team focuses on innovation. 30% increase in output within three months.",
-  author: "Sarah Chen",
-  role: "VP of Operations, Axion Manufacturing",
-  gradient: "from-blue-700 via-indigo-800 to-purple-900",
+  content: "A Horn Bigarella conduziu a regularização do nosso imóvel sem complicações. Foi tudo muito transparente e ágil.",
+  author: "Carolina Mendes",
+  role: "Empresária, Caxias do Sul",
+  gradient: "from-green-900 via-emerald-800 to-teal-700",
   backgroundImage: "/background-section1.png"
 }, {
-  content: "Implementing Atlas in our fulfillment centers reduced workplace injuries by 40% while improving order accuracy. The learning capabilities are remarkable.",
-  author: "Michael Rodriguez",
-  role: "Director of Logistics, GlobalShip",
-  gradient: "from-indigo-900 via-purple-800 to-orange-500",
+  content: "O projeto de reforma residencial superou nossas expectativas. O resultado ficou moderno, aconchegante e dentro do prazo.",
+  author: "Ricardo Almeida",
+  role: "Cliente residencial",
+  gradient: "from-emerald-800 via-green-700 to-lime-600",
   backgroundImage: "/background-section2.png"
 }, {
-  content: "Atlas adapted to our lab protocols faster than any system we've used. It's like having another researcher who never gets tired and maintains perfect precision.",
-  author: "Dr. Amara Patel",
-  role: "Lead Scientist, BioAdvance Research",
-  gradient: "from-purple-800 via-pink-700 to-red-500",
+  content: "Contratamos a equipe para o PPCI da nossa empresa. A segurança e o profissionalismo foram impecáveis em todas as etapas.",
+  author: "Fernanda Lopes",
+  role: "Gerente de Operações, Indústria Metalúrgica",
+  gradient: "from-teal-800 via-cyan-700 to-blue-600",
   backgroundImage: "/background-section3.png"
 }, {
-  content: "As a mid-size business, we never thought advanced robotics would be accessible to us. Atlas changed that equation entirely with its versatility and ease of deployment.",
-  author: "Jason Lee",
-  role: "CEO, Innovative Solutions Inc.",
-  gradient: "from-orange-600 via-red-500 to-purple-600",
+  content: "Desde o primeiro contato até a entrega do projeto comercial, sentimos confiança e proximidade. Com certeza indicamos a Horn Bigarella.",
+  author: "Marcelo Ribeiro",
+  role: "Proprietário de restaurante",
+  gradient: "from-green-700 via-emerald-600 to-teal-500",
   backgroundImage: "/background-section1.png"
 }];
 
@@ -64,11 +63,11 @@ const Testimonials = () => {
         <div className="flex items-center gap-4 mb-6">
           <div className="pulse-chip">
             <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">04</span>
-            <span>Testimonials</span>
+            <span>Testemunhos</span>
           </div>
         </div>
         
-        <h2 className="text-5xl font-display font-bold mb-12 text-left">What others say</h2>
+        <h2 className="text-5xl font-display font-bold mb-12 text-left">O que nossos clientes falam</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => <TestimonialCard key={index} content={testimonial.content} author={testimonial.author} role={testimonial.role} gradient={testimonial.gradient} backgroundImage={testimonial.backgroundImage} />)}

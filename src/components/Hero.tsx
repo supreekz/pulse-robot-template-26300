@@ -109,7 +109,7 @@ const Hero = () => {
               padding: '16px 24px',
               border: '1px solid white'
             }}>
-                Request Access
+                Quero conversar
                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
             </div>
@@ -123,16 +123,16 @@ const Hero = () => {
               </div> : <>
               <div className="absolute inset-0 bg-dark-900 rounded-2xl sm:rounded-3xl -z-10 shadow-xl"></div>
               <div className="relative transition-all duration-500 ease-out overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl">
-                <img ref={imageRef} src="/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png" alt="Atlas Robot" className="w-full h-auto object-cover transition-transform duration-500 ease-out" style={{
+                <img ref={imageRef} src="/heroo.png" alt="Atlas Robot" className="w-full h-auto object-cover transition-transform duration-500 ease-out" style={{
                 transformStyle: 'preserve-3d'
               }} />
-                <div className="absolute inset-0" style={{
+                {/* <div className="absolute inset-0" style={{
                 backgroundImage: 'url("/hero-image.jpg")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 mixBlendMode: 'overlay',
                 opacity: 0.5
-              }}></div>
+              }}></div> */}
               </div>
               </>}
           </div>

@@ -71,7 +71,7 @@ const Index = () => {
         <ImageShowcaseSection />
         <Features />
         <Testimonials />
-        <Newsletter />
+        {/* <Newsletter /> */}
         <MadeByHumans />
       </main>
       <Footer />
