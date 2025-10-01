@@ -68,74 +68,99 @@ const ImageShowcaseSection = () => {
   ];
 
   return (
-    <section className="w-full py-12 sm:py-16 bg-gradient-to-b from-white to-gray-50" id="showcase">
-      <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
+    <section className="w-full py-16 sm:py-24 bg-gradient-to-br from-pulse-50 via-white to-pulse-100 relative overflow-hidden" id="showcase">
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-pulse-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-pulse-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
+      </div>
+      
+      <div className="container px-4 sm:px-6 lg:px-8 mx-auto relative z-10">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16 animate-on-scroll">
-          <h2 className="text-3xl sm:text-4xl font-display font-bold tracking-tight text-gray-900 mb-4">
+          <div className="inline-block px-6 py-2 bg-pulse-100 text-pulse-700 rounded-full text-sm font-semibold mb-6">
+            Conheça Nossa História
+          </div>
+          <h2 className="text-4xl sm:text-5xl font-display font-bold tracking-tight bg-gradient-to-r from-pulse-600 to-pulse-800 bg-clip-text text-transparent mb-6">
             Sobre a Horn e Bigarella
           </h2>
-          <p className="text-base sm:text-lg text-gray-600">
-            Desde 2021, transformando espaços com expertise em arquitetura, urbanismo e segurança
+          <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
+            Desde 2021, transformando espaços com expertise em <span className="text-pulse-600 font-semibold">arquitetura</span>, <span className="text-pulse-600 font-semibold">urbanismo</span> e <span className="text-pulse-600 font-semibold">segurança</span>
           </p>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 sm:mb-16 max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl p-6 shadow-lg text-center animate-on-scroll hover:shadow-xl transition-shadow">
-            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-pulse-100 text-pulse-600 mb-4">
-              <Building2 className="w-6 h-6" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 sm:mb-16 max-w-5xl mx-auto">
+          <div className="bg-gradient-to-br from-white to-pulse-50 rounded-3xl p-8 shadow-2xl text-center animate-on-scroll hover:shadow-3xl transition-all hover:-translate-y-2 border border-pulse-100">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-pulse-500 to-pulse-700 text-white mb-6 shadow-lg">
+              <Building2 className="w-8 h-8" />
             </div>
-            <div className="text-3xl sm:text-4xl font-display font-bold text-gray-900 mb-2">
+            <div className="text-4xl sm:text-5xl font-display font-bold bg-gradient-to-r from-pulse-600 to-pulse-800 bg-clip-text text-transparent mb-3">
               <CountUp end={2021} duration={1500} />
             </div>
-            <p className="text-gray-600">Ano de Fundação</p>
+            <p className="text-gray-700 font-semibold text-lg">Ano de Fundação</p>
+            <div className="mt-4 h-1 w-16 bg-gradient-to-r from-pulse-500 to-pulse-700 rounded-full mx-auto"></div>
           </div>
 
-          <div className="bg-white rounded-2xl p-6 shadow-lg text-center animate-on-scroll hover:shadow-xl transition-shadow">
-            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-pulse-100 text-pulse-600 mb-4">
-              <Users className="w-6 h-6" />
+          <div className="bg-gradient-to-br from-white to-pulse-50 rounded-3xl p-8 shadow-2xl text-center animate-on-scroll hover:shadow-3xl transition-all hover:-translate-y-2 border border-pulse-100">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-pulse-500 to-pulse-700 text-white mb-6 shadow-lg">
+              <Users className="w-8 h-8" />
             </div>
-            <div className="text-3xl sm:text-4xl font-display font-bold text-gray-900 mb-2">
+            <div className="text-4xl sm:text-5xl font-display font-bold bg-gradient-to-r from-pulse-600 to-pulse-800 bg-clip-text text-transparent mb-3">
               <CountUp end={150} duration={2000} />
             </div>
-            <p className="text-gray-600">Clientes Atendidos</p>
+            <p className="text-gray-700 font-semibold text-lg">Clientes Atendidos</p>
+            <div className="mt-4 h-1 w-16 bg-gradient-to-r from-pulse-500 to-pulse-700 rounded-full mx-auto"></div>
           </div>
 
-          <div className="bg-white rounded-2xl p-6 shadow-lg text-center animate-on-scroll hover:shadow-xl transition-shadow">
-            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-pulse-100 text-pulse-600 mb-4">
-              <TrendingUp className="w-6 h-6" />
+          <div className="bg-gradient-to-br from-white to-pulse-50 rounded-3xl p-8 shadow-2xl text-center animate-on-scroll hover:shadow-3xl transition-all hover:-translate-y-2 border border-pulse-100">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-pulse-500 to-pulse-700 text-white mb-6 shadow-lg">
+              <TrendingUp className="w-8 h-8" />
             </div>
-            <div className="text-3xl sm:text-4xl font-display font-bold text-gray-900 mb-2">
+            <div className="text-4xl sm:text-5xl font-display font-bold bg-gradient-to-r from-pulse-600 to-pulse-800 bg-clip-text text-transparent mb-3">
               <CountUp end={200} duration={2000} />
             </div>
-            <p className="text-gray-600">Projetos Realizados</p>
+            <p className="text-gray-700 font-semibold text-lg">Projetos Realizados</p>
+            <div className="mt-4 h-1 w-16 bg-gradient-to-r from-pulse-500 to-pulse-700 rounded-full mx-auto"></div>
           </div>
         </div>
 
         {/* Partners */}
-        <div className="max-w-5xl mx-auto">
-          <h3 className="text-2xl sm:text-3xl font-display font-bold text-center text-gray-900 mb-8 sm:mb-12">
-            Nossos Sócios
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl sm:text-4xl font-display font-bold bg-gradient-to-r from-pulse-600 to-pulse-800 bg-clip-text text-transparent mb-4">
+              Nossos Sócios
+            </h3>
+            <p className="text-lg text-gray-600">
+              A expertise que faz a diferença em cada projeto
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10">
             {partners.map((partner, index) => (
               <div 
                 key={index}
-                className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg animate-on-scroll hover:shadow-xl transition-all hover:-translate-y-1"
+                className="group bg-gradient-to-br from-white via-white to-pulse-50 rounded-3xl p-8 sm:p-10 shadow-2xl animate-on-scroll hover:shadow-3xl transition-all hover:-translate-y-2 border border-pulse-100 relative overflow-hidden"
               >
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-pulse-500 to-pulse-700 mx-auto mb-4 flex items-center justify-center">
-                  <Users className="w-10 h-10 text-white" />
+                {/* Decorative element */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-pulse-200 to-pulse-300 rounded-full filter blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                
+                <div className="relative z-10">
+                  <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-pulse-500 via-pulse-600 to-pulse-700 mx-auto mb-6 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                    <Users className="w-12 h-12 text-white" />
+                  </div>
+                  <h4 className="text-2xl font-display font-bold text-gray-900 mb-3 text-center">
+                    {partner.name}
+                  </h4>
+                  <div className="inline-block w-full mb-4">
+                    <p className="text-pulse-600 font-bold text-center bg-pulse-50 px-4 py-2 rounded-full inline-block mx-auto">
+                      {partner.role}
+                    </p>
+                  </div>
+                  <p className="text-gray-600 text-base text-center leading-relaxed">
+                    {partner.description}
+                  </p>
+                  <div className="mt-6 h-1 w-20 bg-gradient-to-r from-pulse-500 to-pulse-700 rounded-full mx-auto"></div>
                 </div>
-                <h4 className="text-xl font-display font-semibold text-gray-900 mb-2 text-center">
-                  {partner.name}
-                </h4>
-                <p className="text-pulse-600 font-medium mb-3 text-center">
-                  {partner.role}
-                </p>
-                <p className="text-gray-600 text-sm text-center">
-                  {partner.description}
-                </p>
               </div>
             ))}
           </div>
