@@ -63,7 +63,13 @@ const ImageShowcaseSection = () => {
       {
         icon: Briefcase,
         title: "Ex-Diretora",
-        subtitle: "Secretaria do Meio Ambiente",
+        subtitle: "Secretaria do Meio Ambiente e Sustentabilidade (SEMMA)",
+        description: "Caxias do Sul"
+      },
+      {
+        icon: Briefcase,
+        title: "Ex-Arquiteta Geral",
+        subtitle: "Secretaria do Município da Educação (SMED)",
         description: "Caxias do Sul"
       }
     ]

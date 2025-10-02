@@ -101,7 +101,7 @@ const HumanoidSection = () => {
             opacity: isFirstCardVisible ? 0.9 : 0
           }}>
               <div className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80" style={{
-              backgroundImage: "url('/background-section1.png')",
+              backgroundImage: "url('/card1.png')",
               backgroundSize: "cover",
               backgroundPosition: "top center",
               backgroundBlendMode: "overlay"
@@ -131,7 +131,7 @@ const HumanoidSection = () => {
             pointerEvents: isSecondCardVisible ? 'auto' : 'none'
           }}>
               <div className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80" style={{
-              backgroundImage: "url('/background-section2.png')",
+              backgroundImage: "url('/card2.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundBlendMode: "overlay"
@@ -146,7 +146,8 @@ const HumanoidSection = () => {
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
-                    Ser referência em projetos e regularizações em <span className="text-[#FC4D0A]">todo o Brasil</span>, reconhecida pela inovação, pela confiança técnica e pela proximidade com os clientes
+                    Ser referência em projetos e regularizações em <span className="text-[rgb(143,214,147)]
+">todo o Brasil</span>, reconhecida pela inovação, pela confiança técnica e pela proximidade com os clientes
                   </h3>
                 </div>
               </div>
@@ -161,7 +162,7 @@ const HumanoidSection = () => {
             pointerEvents: isThirdCardVisible ? 'auto' : 'none'
           }}>
               <div className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80" style={{
-              backgroundImage: "url('/background-section3.png')",
+              backgroundImage: "url('/mesh-gradient1.png')",
               backgroundSize: "cover",
               backgroundPosition: "bottom center",
               backgroundBlendMode: "overlay"
