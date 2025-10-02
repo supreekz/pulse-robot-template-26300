@@ -59,9 +59,9 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation - improved for better touch experience */}
-      <div className={cn("fixed inset-0 z-40 bg-white flex flex-col pt-16 px-6 md:hidden transition-all duration-300 ease-in-out", isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none")}>
-        <nav className="flex flex-col space-y-8 items-center mt-8">
-          <a href="#" className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" onClick={e => {
+      <div className={cn("fixed inset-0 z-40 bg-gradient-to-br from-pulse-50 via-pulse-100 to-pulse-200 backdrop-blur-lg flex flex-col pt-16 px-6 md:hidden transition-all duration-300 ease-in-out", isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none")}>
+        <nav className="flex flex-col space-y-6 items-center mt-8">
+          <a href="#" className="text-xl font-medium py-4 px-6 w-full text-center rounded-xl bg-white/60 backdrop-blur-sm text-pulse-900 hover:bg-pulse-500 hover:text-white transition-all duration-200 shadow-sm" onClick={e => {
           e.preventDefault();
           scrollToTop();
           setIsMenuOpen(false);
@@ -69,19 +69,19 @@ const Navbar = () => {
         }}>
             Home
           </a>
-          <a href="#portfolio" className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" onClick={() => {
+          <a href="#portfolio" className="text-xl font-medium py-4 px-6 w-full text-center rounded-xl bg-white/60 backdrop-blur-sm text-pulse-900 hover:bg-pulse-500 hover:text-white transition-all duration-200 shadow-sm" onClick={() => {
           setIsMenuOpen(false);
           document.body.style.overflow = '';
         }}>
             Portfolio
           </a>
-          <a href="#features" className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" onClick={() => {
+          <a href="#features" className="text-xl font-medium py-4 px-6 w-full text-center rounded-xl bg-white/60 backdrop-blur-sm text-pulse-900 hover:bg-pulse-500 hover:text-white transition-all duration-200 shadow-sm" onClick={() => {
           setIsMenuOpen(false);
           document.body.style.overflow = '';
         }}>
             Sobre
           </a>
-          <a href="#contact" className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" onClick={() => {
+          <a href="#contact" className="text-xl font-medium py-4 px-6 w-full text-center rounded-xl bg-white/60 backdrop-blur-sm text-pulse-900 hover:bg-pulse-500 hover:text-white transition-all duration-200 shadow-sm" onClick={() => {
           setIsMenuOpen(false);
           document.body.style.overflow = '';
         }}>
