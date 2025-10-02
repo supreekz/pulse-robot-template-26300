@@ -51,8 +51,8 @@ const CountUp = ({ end, duration = 2000 }: { end: number; duration?: number }) =
 const ImageShowcaseSection = () => {
   const founder = {
     name: "Fernanda Frigeri Horn Bigarella",
-    role: "Arquiteta e Urbanista",
-    description: "Fundadora e sócia-diretora, com décadas de experiência transformando espaços urbanos e institucionais",
+    role: "Arquiteta e Urbanista - CAU A204732-2",
+    description: "Fernanda é arquiteta e urbanista com mais de 35 anos de trajetória profissional, acumulando experiências sólidas em diferentes áreas da arquitetura e infraestrutura. Atuou na Universidade de Caxias do Sul, na SEMMA – onde projetou parques e áreas verdes –, no Hospital Virvi Ramos, com foco em projetos e infraestrutura hospitalar, e na Secretaria de Educação, contribuindo com soluções arquitetônicas voltadas a espaços educacionais. Sua carreira é marcada pela versatilidade e pelo compromisso em desenvolver projetos que unem técnica e funcionalidade.",
     credentials: [
       {
         icon: Building2,
@@ -71,16 +71,16 @@ const ImageShowcaseSection = () => {
 
   const partners = [
     {
-      name: "Arq. Daniela Horn Bigarella",
-      role: "Arquiteta e Urbanista",
-      icon: Shield,
-      description: "Especialista em PPCI (Plano de Prevenção e Proteção Contra Incêndio) e projetos de segurança"
+      name: "Arq. Maria Eugênia Horn Bigarella",
+      role: "Arquiteta, Urbanista e Engenheira de Seg. do Trabalho - CAU 00A2913070",
+      icon: "/maria1.jpg",
+      description: "Formada pela Universidade de Caxias do Sul e especialista em Engenharia de Segurança do Trabalho. Atua com ênfase em projetos de Prevenção e Proteção Contra Incêndios (PPCI), reunindo experiência no desenvolvimento, adequação e compatibilização de projetos. Destaca-se por desenvolver soluções que aliam segurança, funcionalidade e eficiência no atendimento às normas."
     },
     {
-      name: "Eng. Carolina Horn Bigarella",
-      role: "Engenheira Civil",
-      icon: Award,
-      description: "Focada em projetos estruturais e gerenciamento de obras"
+      name: "Eng. Catharina Horn Bigarella",
+      role: "Engenheira Civil - CREA-RS269098",
+      icon: "/catha2.jpg",
+      description: "Formada pela Universidade de Caxias do Sul. Desde o início de sua trajetória profissional, vem atuando na área de Prevenção e Proteção Contra Incêndios (PPCI), acumulando experiência no desenvolvimento de projetos, adequações técnicas e acompanhamento de processos junto aos órgãos competentes. Sua formação recente, aliada à prática no setor, reflete uma atuação atualizada e comprometida com soluções seguras, eficientes e em conformidade com a legislação vigente."
     }
   ];
 
@@ -144,12 +144,17 @@ const ImageShowcaseSection = () => {
             <div className="bg-gradient-to-br from-pulse-50 via-white to-pulse-50 rounded-3xl p-8 sm:p-10 shadow-2xl border border-pulse-100 hover:shadow-3xl transition-all hover:-translate-y-1">
               <div className="flex flex-col items-center text-center mb-6">
                 <div className="w-24 h-24 rounded-full bg-gradient-to-br from-pulse-500 to-pulse-700 mb-5 flex items-center justify-center shadow-lg">
-                  <Award className="w-12 h-12 text-white" />
+                    <img 
+                    src="/fernanda.jpg"
+                    alt="Maria"
+                    className="rounded-full"
+                  />
+                  {/* <Award className="w-12 h-12 text-white" /> */}
                 </div>
                 <div className="inline-flex items-center gap-2 mb-3">
-                  <span className="px-3 py-1 bg-pulse-600 text-white text-xs font-semibold rounded-full">
+                  {/* <span className="px-3 py-1 bg-pulse-600 text-white text-xs font-semibold rounded-full">
                     Fundadora
-                  </span>
+                  </span> */}
                 </div>
                 <h4 className="text-2xl sm:text-3xl font-display font-bold text-gray-900 mb-2">
                   {founder.name}
@@ -204,7 +209,12 @@ const ImageShowcaseSection = () => {
                   className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg animate-on-scroll hover:shadow-xl transition-all hover:-translate-y-1 border border-gray-100"
                 >
                   <div className="w-20 h-20 rounded-full bg-gradient-to-br from-pulse-400 to-pulse-600 mx-auto mb-4 flex items-center justify-center shadow-md">
-                    <Icon className="w-10 h-10 text-white" />
+                    <img 
+                    src={partner.icon}
+                    alt={partner.name}
+                    className="rounded-full">
+
+                    </img>
                   </div>
                   <h4 className="text-xl font-display font-semibold text-gray-900 mb-2 text-center">
                     {partner.name}

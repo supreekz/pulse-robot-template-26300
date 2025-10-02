@@ -6,7 +6,7 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "Residência Moderna",
+      title: "Mato Sartori",
       category: "Residencial",
       description: "Projeto residencial contemporâneo com amplos espaços integrados e foco em sustentabilidade.",
       icon: Home,
