@@ -59,7 +59,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation - improved for better touch experience */}
-      <div className={cn("fixed inset-0 z-40 bg-gradient-to-br from-pulse-50 via-pulse-100 to-pulse-200 backdrop-blur-lg flex flex-col pt-16 px-6 md:hidden transition-all duration-300 ease-in-out", isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none")}>
+      <div className={cn("fixed inset-0 z-[60] bg-gradient-to-br from-pulse-50 via-pulse-100 to-pulse-200 backdrop-blur-lg flex flex-col pt-16 px-6 md:hidden transition-all duration-300 ease-in-out", isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none")}>
         <nav className="flex flex-col space-y-6 items-center mt-8">
           <a href="#" className="text-xl font-medium py-4 px-6 w-full text-center rounded-xl bg-white/60 backdrop-blur-sm text-pulse-900 hover:bg-pulse-500 hover:text-white transition-all duration-200 shadow-sm" onClick={e => {
           e.preventDefault();
