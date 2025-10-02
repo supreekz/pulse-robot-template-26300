@@ -49,7 +49,7 @@ const Navbar = () => {
           </a>
           <a href="#portfolio" className="nav-link">Portfolio</a>
           <a href="#features" className="nav-link">Sobre</a>
-          <a href="#details" className="nav-link">Contato</a>
+          <a href="#contact" className="nav-link">Contato</a>
         </nav>
 
         {/* Mobile menu button - increased touch target */}
@@ -81,7 +81,7 @@ const Navbar = () => {
         }}>
             Sobre
           </a>
-          <a href="#details" className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" onClick={() => {
+          <a href="#contact" className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" onClick={() => {
           setIsMenuOpen(false);
           document.body.style.overflow = '';
         }}>
