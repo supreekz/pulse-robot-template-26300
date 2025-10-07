@@ -10,7 +10,7 @@ const SpecsSection = () => {
           <div className="flex items-center gap-4">
             <div className="pulse-chip">
               <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">3</span>
-              <span>Specs</span>
+              <span>Resumo</span>
             </div>
           </div>
           <div className="flex-1 h-[1px] bg-gray-300"></div>
