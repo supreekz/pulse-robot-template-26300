@@ -54,7 +54,8 @@ const Navbar = () => {
             }}
             aria-label="Pulse Robot"
           >
-            <img src="/aaaaaa.png" alt="Pulse Robot Logo" className="h-7 sm:h-8" />
+            <img src={`${import.meta.env.BASE_URL}aaaaaa.png`}
+            alt="Pulse Robot Logo" className="h-7 sm:h-8" />
           </a>
 
           {/* Desktop */}

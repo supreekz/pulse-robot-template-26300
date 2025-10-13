@@ -123,7 +123,7 @@ const Hero = () => {
               </div> : <>
               <div className="absolute inset-0 bg-dark-900 rounded-2xl sm:rounded-3xl -z-10 shadow-xl"></div>
               <div className="relative transition-all duration-500 ease-out overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl">
-                <img ref={imageRef} src="/heroo.png" alt="Atlas Robot" className="w-full h-auto object-cover transition-transform duration-500 ease-out" style={{
+                <img ref={imageRef} src={`${import.meta.env.BASE_URL}heroo.png`} alt="Atlas Robot" className="w-full h-auto object-cover transition-transform duration-500 ease-out" style={{
                 transformStyle: 'preserve-3d'
               }} />
                 {/* <div className="absolute inset-0" style={{

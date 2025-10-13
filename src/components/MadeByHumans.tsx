@@ -11,7 +11,7 @@ const MadeByHumans = () => {
           >
             <div className="flex items-center text-white">
               <img
-                src="/logo.svg"
+                src={`${import.meta.env.BASE_URL}logo.svg`}
                 alt="Pulse Robot Logo"
                 className="h-5 sm:h-6 w-auto mr-3 invert"
               />
