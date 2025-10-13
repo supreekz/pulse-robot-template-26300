@@ -101,7 +101,7 @@ const HumanoidSection = () => {
             opacity: isFirstCardVisible ? 0.9 : 0
           }}>
               <div className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80" style={{
-              backgroundImage: "url('/card1.png')",
+            backgroundImage: `url(${import.meta.env.BASE_URL}card1.png)`,
               backgroundSize: "cover",
               backgroundPosition: "top center",
               backgroundBlendMode: "overlay"
@@ -131,7 +131,8 @@ const HumanoidSection = () => {
             pointerEvents: isSecondCardVisible ? 'auto' : 'none'
           }}>
               <div className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80" style={{
-              backgroundImage: "url('/card2.png')",
+            backgroundImage: `url(${import.meta.env.BASE_URL}card2.png)`,
+
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundBlendMode: "overlay"
@@ -162,7 +163,8 @@ const HumanoidSection = () => {
             pointerEvents: isThirdCardVisible ? 'auto' : 'none'
           }}>
               <div className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80" style={{
-              backgroundImage: "url('/mesh-gradient1.png')",
+            backgroundImage: `url(${import.meta.env.BASE_URL}mesh-gradient1.png)`,
+
               backgroundSize: "cover",
               backgroundPosition: "bottom center",
               backgroundBlendMode: "overlay"

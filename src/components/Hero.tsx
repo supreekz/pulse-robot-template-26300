@@ -17,7 +17,7 @@ const Hero = () => {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
   useEffect(() => {
-    fetch('/loop-header.lottie').then(response => response.json()).then(data => setLottieData(data)).catch(error => console.error("Error loading Lottie animation:", error));
+    fetch(`${import.meta.env.BASE_URL}loop-header.lottie`).then(response => response.json()).then(data => setLottieData(data)).catch(error => console.error("Error loading Lottie animation:", error));
   }, []);
   useEffect(() => {
     // Skip effect on mobile
@@ -69,7 +69,7 @@ const Hero = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [isMobile]);
   return <section className="overflow-hidden relative bg-cover" id="hero" style={{
-    backgroundImage: 'url("/Header-background.webp")',
+   backgroundImage: `url(${import.meta.env.BASE_URL}Header-background.webp)`,
     backgroundPosition: 'center 30%',
     padding: isMobile ? '100px 12px 40px' : '120px 20px 60px'
   }}>

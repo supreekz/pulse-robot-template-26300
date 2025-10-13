@@ -150,11 +150,11 @@ const ImageShowcaseSection = () => {
             <div className="bg-gradient-to-br from-pulse-50 via-white to-pulse-50 rounded-3xl p-8 sm:p-10 shadow-2xl border border-pulse-100 hover:shadow-3xl transition-all hover:-translate-y-1">
               <div className="flex flex-col items-center text-center mb-6">
                 <div className="w-24 h-24 rounded-full bg-gradient-to-br from-pulse-500 to-pulse-700 mb-5 flex items-center justify-center shadow-lg">
-                    <img 
+                    {/* <img 
                     src="/fernanda.jpg"
                     alt="Maria"
                     className="rounded-full"
-                  />
+                  /> */}
                   {/* <Award className="w-12 h-12 text-white" /> */}
                 </div>
                 <div className="inline-flex items-center gap-2 mb-3">
