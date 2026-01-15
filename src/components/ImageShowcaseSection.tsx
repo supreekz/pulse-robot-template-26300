@@ -52,7 +52,7 @@ const ImageShowcaseSection = () => {
   const founder = {
     name: "Fernanda Frigeri Horn Bigarella",
     role: "Arquiteta e Urbanista - CAU A204732-2",
-    description: "Fernanda é arquiteta e urbanista com mais de 35 anos de trajetória profissional, acumulando experiências sólidas em diferentes áreas da arquitetura e infraestrutura. Atuou na Universidade de Caxias do Sul, na SEMMA – onde projetou parques e áreas verdes –, no Hospital Virvi Ramos, com foco em projetos e infraestrutura hospitalar, e na Secretaria de Educação, contribuindo com soluções arquitetônicas voltadas a espaços educacionais. Sua carreira é marcada pela versatilidade e pelo compromisso em desenvolver projetos que unem técnica e funcionalidade.",
+    description: "Arquiteta e urbanista com mais de 40 anos de atuação, desenvolve projetos residenciais, comerciais, corporativos e espaços urbanos e paisagísticos, unindo experiência, sensibilidade e visão ampla para criar ambientes que acolhem, inspiram e funcionam com equilíbrio.",
     credentials: [
       {
         icon: Building2,
@@ -80,13 +80,13 @@ const ImageShowcaseSection = () => {
       name: "Arq. Maria Eugênia Horn Bigarella",
       role: "Arquiteta, Urbanista e Engenheira de Seg. do Trabalho - CAU 00A2913070",
       icon: "/maria1.jpg",
-      description: "Formada pela Universidade de Caxias do Sul e especialista em Engenharia de Segurança do Trabalho. Atua com ênfase em projetos de Prevenção e Proteção Contra Incêndios (PPCI), reunindo experiência no desenvolvimento, adequação e compatibilização de projetos. Destaca-se por desenvolver soluções que aliam segurança, funcionalidade e eficiência no atendimento às normas."
+      description: "Une a visão da arquitetura à precisão da engenharia de segurança, criando projetos que traduzem cuidado, proteção e harmonia. Seu trabalho busca equilibrar beleza e responsabilidade, transformando necessidades em espaços seguros, humanos e autênticos."
     },
     {
       name: "Eng. Catharina Horn Bigarella",
       role: "Engenheira Civil - CREA-RS269098",
       icon: "/catha2.jpg",
-      description: "Formada pela Universidade de Caxias do Sul. Desde o início de sua trajetória profissional, vem atuando na área de Prevenção e Proteção Contra Incêndios (PPCI), acumulando experiência no desenvolvimento de projetos, adequações técnicas e acompanhamento de processos junto aos órgãos competentes. Sua formação recente, aliada à prática no setor, reflete uma atuação atualizada e comprometida com soluções seguras, eficientes e em conformidade com a legislação vigente."
+      description: "Engenheira civil com atuação focada em PPCI e projetos complementares, trabalha com precisão técnica e olhar analítico para garantir sistemas de segurança completos, eficientes e integrados à arquitetura de cada edificação."
     }
   ];
 
