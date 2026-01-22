@@ -215,12 +215,11 @@ const ImageShowcaseSection = () => {
                   className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg animate-on-scroll hover:shadow-xl transition-all hover:-translate-y-1 border border-gray-100"
                 >
                   <div className="w-20 h-20 rounded-full bg-gradient-to-br from-pulse-400 to-pulse-600 mx-auto mb-4 flex items-center justify-center shadow-md">
-                    <img 
-                    src={partner.icon}
-                    alt={partner.name}
-                    className="rounded-full">
-
-                    </img>
+                    <img
+                      src={partner.icon}
+                      alt={partner.name}
+                      className="rounded-full"
+                    />
                   </div>
                   <h4 className="text-xl font-display font-semibold text-gray-900 mb-2 text-center">
                     {partner.name}
