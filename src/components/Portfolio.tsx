@@ -45,7 +45,7 @@ const Portfolio = () => {
         <div className="flex items-center gap-4 mb-8 sm:mb-12">
           <div className="flex items-center gap-4">
             <div className="pulse-chip">
-              <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">4</span>
+              {/* <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">4</span> */}
               <span>Portfolio</span>
             </div>
           </div>

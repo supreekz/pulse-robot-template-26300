@@ -78,12 +78,12 @@ const Hero = () => {
       <div className="container px-4 sm:px-6 lg:px-8" ref={containerRef}>
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center">
           <div className="w-full lg:w-1/2">
-            <div className="pulse-chip mb-3 sm:mb-6 opacity-0 animate-fade-in" style={{
+            {/* <div className="pulse-chip mb-3 sm:mb-6 opacity-0 animate-fade-in" style={{
             animationDelay: "0.1s"
           }}>
               <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">01</span>
               <span>HB</span>
-            </div>
+            </div> */}
             
             <h1 className="section-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight opacity-0 animate-fade-in" style={{
             animationDelay: "0.3s"
@@ -140,6 +140,14 @@ const Hero = () => {
       </div>
       
       <div className="hidden lg:block absolute bottom-0 left-1/4 w-64 h-64 bg-pulse-100/30 rounded-full blur-3xl -z-10 parallax" data-speed="0.05"></div>
+      
+      {/* Overlay de fade-out suave na parte inferior */}
+      <div 
+        className="absolute bottom-0 left-0 right-0 h-32 sm:h-48 lg:h-64 pointer-events-none"
+        style={{
+          background: 'linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.95) 100%)'
+        }}
+      ></div>
     </section>;
 };
 export default Hero;

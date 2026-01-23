@@ -174,29 +174,23 @@ const ImageShowcaseSection = () => {
               </div>
 
               {/* Credentials */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+              <div className="flex flex-nowrap gap-4 max-w-3xl mx-auto">
                 {founder.credentials.map((credential, index) => {
-                  const Icon = credential.icon;
                   return (
                     <div 
                       key={index}
-                      className="bg-white rounded-xl p-5 shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5 border border-pulse-100"
+                      className="flex-1 bg-white rounded-xl p-5 shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5 border border-pulse-100"
                     >
-                      <div className="flex items-start gap-3">
-                        <div className="w-10 h-10 rounded-lg bg-pulse-100 flex items-center justify-center flex-shrink-0">
-                          <Icon className="w-5 h-5 text-pulse-600" />
-                        </div>
-                        <div className="flex-1 text-left">
-                          <h5 className="font-semibold text-gray-900 mb-1">
-                            {credential.title}
-                          </h5>
-                          <p className="text-pulse-600 text-sm font-medium mb-1">
-                            {credential.subtitle}
-                          </p>
-                          <p className="text-gray-600 text-xs">
-                            {credential.description}
-                          </p>
-                        </div>
+                      <div className="text-left">
+                        <h5 className="font-semibold text-gray-900 mb-1">
+                          {credential.title}
+                        </h5>
+                        <p className="text-pulse-600 text-sm font-medium mb-1">
+                          {credential.subtitle}
+                        </p>
+                        <p className="text-gray-600 text-xs">
+                          {credential.description}
+                        </p>
                       </div>
                     </div>
                   );

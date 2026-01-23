@@ -38,9 +38,9 @@ const Navbar = () => {
       <header
         className={cn(
           "fixed top-0 left-0 right-0 z-50 py-2 sm:py-3 md:py-4 transition-all duration-300",
-          // mantém fundo/blur tanto quando scrolled quanto quando o menu está aberto (melhora contraste do botão)
+          // aplica blur quando scrolled ou quando o menu está aberto
           isScrolled || isMenuOpen
-            ? "bg-white/80 backdrop-blur-md shadow-sm"
+            ? "backdrop-blur-md"
             : "bg-transparent"
         )}
       >

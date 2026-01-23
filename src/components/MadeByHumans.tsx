@@ -9,13 +9,13 @@ const MadeByHumans = () => {
             className="relative bg-no-repeat bg-cover bg-center p-4 sm:p-5 min-h-[250px] sm:min_h-[350px] flex flex-col justify-between"
             style={{ backgroundImage: "url('/mesh-gradient.png')" }}
           >
-            <div className="flex items-center text-white">
+            {/* <div className="flex items-center text-white">
               <img
                 src={`${import.meta.env.BASE_URL}logo.svg`}
                 alt="Pulse Robot Logo"
                 className="h-5 sm:h-6 w-auto mr-3 invert"
               />
-            </div>
+            </div> */}
 
             {/* Título em duas linhas no mobile */}
             <div className="relative z-10 mt-10 -top-[12px]">
